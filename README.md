@@ -2,7 +2,7 @@
 
 ## 🗂️ Project Overview
 
-This project explores the global COVID-19 dataset from [Our World in Data (OWID)](https://docs.owid.io/projects/covid/en/latest/dataset.html) using SQL to derive meaningful insights. It is implemented in **Azure Data Studio** on macOS via a Dockerized SQL Server environment, with an alternative setup using SSMS for Windows users.
+This project explores the global COVID-19 dataset from Our World in Data (OWID) using SQL to derive meaningful insights. It is implemented in **Azure Data Studio** on macOS via a Dockerized SQL Server environment, with an alternative setup using SSMS for Windows users.
 
 ### 📊 About the Dataset
 The data used in this project is from the [OWID COVID-19 dataset](https://docs.owid.io/projects/covid/en/latest/dataset.html), maintained by the Global Change Data Lab and the OWID team. This open-access resource compiles data from trusted sources like the WHO, CDC, ECDC, and national health departments, including:
@@ -18,11 +18,11 @@ These indicators are standardized to support global comparability.
 Huge thanks to **Our World in Data** for their dedication to open-access data and empowering global research.
 
 ## 🛠️ Project Highlights
-- 📈 Analyzes global trends in COVID-19 cases, deaths, and vaccinations
-- 💀 Calculates fatality and infection rates across countries and continents
-- ⚠️ Identifies high-risk countries based on severity and vaccine coverage
-- 🧱 Uses CTEs, temp tables, window functions, and views for organized, modular SQL analysis
-- 🧩 Designed for adaptability with BI tools like Tableau and Power BI
+- Analyzes global trends in COVID-19 cases, deaths, and vaccinations
+- Calculates fatality and infection rates across countries and continents
+- Identifies high-risk countries based on severity and vaccine coverage
+- Uses CTEs, temp tables, window functions, and views for organized, modular SQL analysis
+- Designed for adaptability with BI tools like Tableau and Power BI
 
 ## ⚙️ Tools Used
 - Azure Data Studio with Docker (macOS)
@@ -52,15 +52,15 @@ Huge thanks to **Our World in Data** for their dedication to open-access data an
 2. Launch SSMS and connect to `localhost\SQLEXPRESS` using SQL authentication
 
 ## ⚠️ Common Errors and Fixes
-- 🟥 **Red underlines / ghost errors:**
+- **Red underlines / ghost errors:**
   - Refresh IntelliSense Cache (Ctrl+Shift+R)
-- 🛑 **Insert errors (column mismatch):**
+- **Insert errors (column mismatch):**
   - Ensure SELECT column order matches table schema
-- 💥 **Divide by zero:**
+- **Divide by zero:**
   - Use `NULLIF`: `(total_deaths * 100.0) / NULLIF(total_cases, 0)`
-- 🔁 **Duplicate tables or schema mismatch:**
+- **Duplicate tables or schema mismatch:**
   - Drop outdated versions and refresh IntelliSense
-- 🧠 **Missing data / NULLs:**
+- **Missing data / NULLs:**
   - Add filters such as `WHERE continent IS NOT NULL`
 
 ---
