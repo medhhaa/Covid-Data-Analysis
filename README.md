@@ -13,8 +13,6 @@ The data used in this project is from the [OWID COVID-19 dataset](https://docs.o
 - Vaccination statistics
 
 These indicators are standardized to support global comparability.
-
-### 🙏 A Big Thank You
 Huge thanks to **Our World in Data** for their dedication to open-access data and empowering global research.
 
 ## 🛠️ Project Highlights
@@ -51,7 +49,7 @@ Huge thanks to **Our World in Data** for their dedication to open-access data an
 1. Install SQL Server Express and SQL Server Management Studio (SSMS)
 2. Launch SSMS and connect to `localhost\SQLEXPRESS` using SQL authentication
 
-## ⚠️ Common Errors and Fixes
+### Common Errors and Fixes
 - **Red underlines / ghost errors:**
   - Refresh IntelliSense Cache (Ctrl+Shift+R)
 - **Insert errors (column mismatch):**
