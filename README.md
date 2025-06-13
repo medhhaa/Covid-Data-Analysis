@@ -63,6 +63,6 @@ Huge thanks to **Our World in Data** for their dedication to open-access data an
 
 ---
 
-🔎 All queries, views, and analyses are in the [`covid_analysis_queries.sql`](./covid_analysis_queries.sql) file included in this repository.
+🔎 All queries, views, and analyses are in the [`covid_data_analysis_script.sql`](https://github.com/medhhaa/Covid-Data-Analysis/blob/main/covid_data_analysis_script.sql) file included in this repository.
 
 Happy querying! 💻📊
